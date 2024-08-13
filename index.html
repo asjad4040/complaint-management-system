@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="main-logo-container">
+            <img src="/menu-icon.svg" alt="mobile-hamburger" class="menu-icon">
+            <img src="/Blue Modern School Logo.png" alt="main-logo" class="main-logo">
+        </div>
+        <div class="user-container">
+           <div class="user-img-container">
+            <img src="/user-icon.svg" alt="user-icon" class="user-logo">
+           </div> 
+           <button class="log-out-btn">Log Out</button>
+        </div>
+        
+    </header>
+    <main>
+        <div class="mobile-menu-wrapper">
+            <div class="mobile-sidebar">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="/add-cloud.svg" alt="add" class="menu-icon">
+                        <span class="item-title">Add Your Complaint</span>
+                    </li>
+                    <li class="menu-item">
+                        <img src="/delete.svg" alt="add" class="menu-icon">
+                        <span class="item-title">Delete Your Complaint</span>
+                    </li>
+                    <li class="menu-item">
+                        <img src="/gift.svg" alt="add" class="menu-icon">
+                        <span class="item-title">Total Complaints</span>
+                    </li>
+                    <li class="menu-item">
+                        <img src="/home.svg" alt="add" class="menu-icon">
+                        <span class="item-title">Complaint Home</span>
+                    </li>
+                    <li class="menu-item">
+                        <img src="/purchase-icon.svg" alt="add" class="menu-icon">
+                        <span class="item-title">Total Complaints Now</span>
+                    </li>
+                    <li class="menu-item">
+                        <img src="/user-icon.svg" alt="add" class="menu-icon">
+                        <span class="item-title">Your Profile</span>
+                    </li>
+                </ul>
+                <div class="menu-logout-div">
+                    <span class="logout-span">Want to logout?</span>
+                    <button class="log-out-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrapper">
+            <section>
+                <h1 class="section-title">Dashboard</h1>
+                <div class="dasboard-panels">
+                    <div class="panel-item" id="panel-1">
+                        <span class="panel-main-heading">Total Complaints</span>
+                        <span class="panel-value-heading">12</span>
+                    </div>
+                    <div class="panel-item" id="panel-2">
+                        <span class="panel-main-heading">Complaints in Process</span>
+                        <span class="panel-value-heading">12</span>
+                    </div>
+                    <div class="panel-item" id="panel-3">
+                        <span class="panel-main-heading">Complaints Cancelled</span>
+                        <span class="panel-value-heading">12</span>
+                    </div>
+                    <div class="panel-item" id="panel-4">
+                        <span class="panel-main-heading">Issued Complaints</span>
+                        <span class="panel-value-heading">12</span>
+                    </div>
+                    <div class="panel-item" id="panel-5">
+                        <span class="panel-main-heading">Spam Complaints</span>
+                        <span class="panel-value-heading">12</span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1 class="section-title">Sub Admin Data</h1>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Campus Name</th>
+                                <th>Program Name</th>
+                                <th>Student ID</th>
+                                <th>Student Name</th>
+                                <th>CNIC</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Main Campus</td>
+                                <td>Computer Science</td>
+                                <td>CS123</td>
+                                <td>John Doe</td>
+                                <td>12345-6789012-3</td>
+                                <td>johndoe@example.com</td>
+                                <td>123-456-7890</td>
+                                <td>
+                                    <button class="edit-btn">Edit Complaint</button>
+                                    <button class="delete-btn">Delete Complaint</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>City Campus</td>
+                                <td>Electrical Engineering</td>
+                                <td>EE456</td>
+                                <td>Jane Smith</td>
+                                <td>98765-4321098-7</td>
+                                <td>janesmith@example.com</td>
+                                <td>098-765-4321</td>
+                                <td>
+                                    <button class="edit-btn">Edit Complaint</button>
+                                    <button class="delete-btn">Delete Complaint</button>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
